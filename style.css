@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font: 'Montserrat', sans-serif;
+    --main-font-weight: 500;
+    --main-font-size: 16px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    background: black;
+    color: white;
+    opacity: 0;
+    transition: opacity 2s;
+    font-family: var(--main-font);
+    margin-bottom: 20px;
+    border-bottom: solid 1px;
+    padding-bottom: 16px;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: var(--main-font);
+}
+body{
+    background-color: #e3e3e3;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: var(--main-font);
+}
+ul{
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 5px;
+}
+li{
+    font-family: var(--main-font);
+    line-height: 25px;
+}
+
+.header-info a{
+    color: black;
+}
+
+.description p {
+    line-height: 25px;
+}
+
+header{
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.header-info-main{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    right: 2%;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-info{
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+}
+
+.logo-box{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.logo-text{
+    align-self: center;
+    font-family: var(--main-font);
+    font-weight: var(--main-font-weight);
+    font-size: var(--main-font-size);
+}
+.logo-text a{
+    color: white;
+    font-weight: bolder;
+}
+
+.main-display{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    padding: 1rem;
+    margin-top: 20vh;
+    margin-bottom: 36vh;
+    align-self: center;
+}
+
+.project-title{
+    
+}
+
+.in-view{
+    transition: opacity 2s;
+    font-family: Montserrat;
+    color: gray;
+    font-size: 2.7rem;
+    font-weight: 200;
+    position: sticky;
+    top: 39%;
+    opacity: 0;
+}
+
+.about-box{
+    height: 80vh;
+    width: 99%;
+    /* height: 400px;
+    width: 300px; */
+    padding-top:1.3rem ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". title1 title2 side1"
+    ". about about side1"
+    "side2 description description ."
+    "side2 description description .";
+    transition: opacity 1s;
+    opacity: 0;
+}
+
+.about-name{
+    display: flex;
+    justify-content: center;
+    font-family: var(--main-font);
+    font-size: 1rem;
+    align-self: center;
+}
+
+.title-1{
+    grid-area: title1;
+}
+
+.title-2{
+    grid-area: title2;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.about-center{
+    grid-area: about;
+    font-family: var(--main-font);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.jump-to-1{
+    grid-area: side1;
+    transform: rotate(-90deg);
+    align-self: flex-start;
+}
+
+.side-text{
+    font-family: var(--main-font);
+    font-size: calc(var(--main-font-size) - 5px);
+}
+
+.jump-to-2{
+    grid-area: side2;
+    font-family: var(--main-font);
+    transform: rotate(90deg);
+    align-self: end;
+}
+.description{
+    padding: 10px;
+    grid-area: description;
+    font-family: var(--main-font);
+    justify-self: center;
+}
+
+
+.wrapper{
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content{
+    margin-top: 20vh;
+}
+
+
+.content-description {
+    color: white;
+    width: 99%;
+    opacity: 0; 
+    transition: opacity 2s;
+}
+
+#p-text-1{
+    /* opacity: 0; */
+    padding: 10px;
+    line-height: 25px;
+}
+
+.wrapper-2{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    height: 75vh;
+}
+
+.code{
+    height: 99vh;
+    width: 99%;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.languages{
+    display: flex;
+}
+
+.code-description{
+    display: flex;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    justify-content: center;
+    line-height: 20px;
+    padding: 5px;
+    
+}
+
+.linky{
+    display: flex;
+    justify-content: center;
+}
+.linky a{
+    font-family: var(--main-font);
+    font-size: large;
+    
+}
+
+.img-flex{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 1%;
+    right: 14%;
+    gap: 30px;
+    transition: opacity 1s;
+}
+
+.image-circle{
+
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (min-width: 550px) and (max-width:700px) {
+    .project-box{
+        width: 450px;
+        cursor: pointer;
+    }
+    .img-flex{
+        flex-direction: column;
+        top: 10%;
+        right: 7%;
+        gap: 25px;
+    }
+    .image-circle{
+        width: 60px;
+        height: 60px;
+    }
+    .linky a{
+        font-family: var(--main-font);
+        font-size: large;
+        
+    }
+}
+@media screen and (min-width: 701px) and (max-width:900px){
+    
+    h2{
+        font-size: calc(var(--main-font-size) * 2);
+    }
+
+    h3{
+        font-size: calc(var(--main-font-size) * 2);
+    }
+
+    ul{
+        padding: 30px;
+        font-size: 1.5rem;
+    }
+
+    .project-box{
+        width: 550px;
+        height: 361px;
+    }
+
+    .img-flex{
+        flex-direction: column;
+        top: 18%;
+        right: 10%;
+        gap: 25px;
+    }
+
+    .image-circle{
+        width: 60px;
+        height: 60px;
+    }
+
+    .title-1{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    .title-2{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+    .about-center{
+        font-size: 2.8rem;
+    }
+    .side-text{
+        font-size: var(--main-font-size);
+    }
+    .description{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    #p-text-1{
+        padding: 20px;
+    }
+
+    .languages{
+        font-size: 1.4rem;
+    }
+
+    .code-description{
+        font-size: 1.6rem;
+        padding: 10px;
+        line-height: 25px;
+    }
+
+    .linky a{
+        font-family: var(--main-font);
+        font-size: x-large;
+        
+    }
+
+    
+}
+
+
+@media screen and (min-width: 900px) {
+    h3{
+        font-size: calc(var(--main-font-size) * 2.5);
+    }
+    h2{
+        font-size: calc(var(--main-font-size) * 2.5);
+    }
+
+    ul{
+        padding: 30px;
+        font-size: 25px;
+    }
+
+    .logo-box{
+        height: 80px;
+        width: 80px;
+    }
+
+    .logo-text{
+        font-size: calc(var(--main-font-size) + 8px);
+    }
+    .header-info-main{
+        gap: 80px;
+    }
+
+    .header-info{
+        font-size: calc(var(--main-font-size) + 8px);
+    }
+    .project-box{
+        width: 70%;
+        height: 700px;
+        cursor: pointer;
+    }
+    .in-view{
+        font-size: 5.1rem;
+    }
+
+    .img-flex{
+        flex-direction: column;
+        top: 30%;
+        right: 10%;
+        gap: 35px;
+    }
+    .image-circle{
+        width: 85px;
+        height: 85px;
+    }
+    .title-1{
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    .title-2{
+        font-size: 2.1rem;
+        font-weight: 500;
+    }
+
+    .about-center{
+        font-size: 3.0rem;
+    }
+    .side-text{
+        font-size: var(--main-font-size) *2px;
+    }
+    .description{
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+    #p-text-1{
+        padding: 20px;
+        font-size: 27px;
+    }
+    .languages{
+        font-size: 1.6rem;
+    }
+    .code-description{
+        font-size: 1.8rem;
+        padding: 20px;
+        line-height: 30px;
+    }
+
+    .linky a{
+        font-family: var(--main-font);
+        font-size: xx-large;
+        
+    }
+
+    
+}   
