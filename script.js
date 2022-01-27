@@ -4,6 +4,7 @@ const divy = document.createElement("divy");
 const elements = document.querySelectorAll("project-box");
 const circleFlex = document.createElement("div");
 const imageFlex = document.querySelectorAll(".img-flex");
+const imageBox = document.querySelector(".img-box")
 
 
 const projects =  document.querySelectorAll(".project-title");
@@ -37,12 +38,23 @@ document.addEventListener("scroll", () => {
             projects[i].classList.add("in-view");
             projects[i].style.opacity = "1";
             imageFlex[i].style.opacity = "1"
+            
            
         }
         else{
             projects[i].style.opacity = "0"
             imageFlex[i].style.opacity = "0";
+            
         }
+    }
+})
+
+document.addEventListener("scroll", () =>{
+    if(isInViewPort(imageBox)){
+        imageBox.style.opacity ="1"
+    }
+    else{
+        imageBox.style.opacity ="0"
     }
 })
 
