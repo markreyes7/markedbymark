@@ -7,54 +7,54 @@ const imageFlex = document.querySelectorAll(".img-flex");
 const imageBox = document.querySelector(".img-box")
 
 
-const projects =  document.querySelectorAll(".project-title");
+const projects = document.querySelectorAll(".project-title");
 
 
 
-window.addEventListener("resize", ()  =>{
+window.addEventListener("resize", () => {
     const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-    if (vw >= 850){
-        
+    if (vw >= 850) {
+
     }
 })
 
 
 
 
-function isInViewPort(el){
+function isInViewPort(el) {
     var rect = el.getBoundingClientRect();
 
     return (
         rect.top >= 0 &&
         rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && 
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) 
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
 
 document.addEventListener("scroll", () => {
-    for (var i =0; i < projects.length;i++){
-        if(isInViewPort(projects[i])){
+    for (var i = 0; i < projects.length; i++) {
+        if (isInViewPort(projects[i])) {
             projects[i].classList.add("in-view");
             projects[i].style.opacity = "1";
             imageFlex[i].style.opacity = "1"
-            
-           
+
+
         }
-        else{
+        else {
             projects[i].style.opacity = "0"
             imageFlex[i].style.opacity = "0";
-            
+
         }
     }
 })
 
-document.addEventListener("scroll", () =>{
-    if(isInViewPort(imageBox)){
-        imageBox.style.opacity ="1"
+document.addEventListener("scroll", () => {
+    if (isInViewPort(imageBox)) {
+        imageBox.style.opacity = "1"
     }
-    else{
-        imageBox.style.opacity ="0"
+    else {
+        imageBox.style.opacity = "0"
     }
 })
 
