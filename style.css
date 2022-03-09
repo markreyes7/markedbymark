@@ -39,6 +39,8 @@ h3{
 h4{
     display: flex;
     justify-content: center;
+    font-family: var(--main-font);
+    font-weight: bolder;
 }
 body{
     background-color: #e3e3e3;
@@ -315,6 +317,7 @@ header{
 .vid-description{
     display: flex;
     justify-content: center;
+    padding: 30px 20px;
 }
 
 .vid{
@@ -354,6 +357,10 @@ header{
 
     h3{
         font-size: calc(var(--main-font-size) * 2);
+    }
+
+    h4{
+        font-size: calc(var(--main-font-size) * 3);
     }
 
     ul{
@@ -429,6 +436,10 @@ header{
         font-size: calc(var(--main-font-size) * 2.5);
     }
 
+    h4{
+        font-size: calc(var(--main-font-size) * 2);
+    }
+
     ul{
         padding: 30px;
         font-size: 25px;
@@ -489,7 +500,7 @@ header{
         font-weight: 300;
     }
     #p-text-1{
-        padding: 20px;
+        padding: 25px;
         font-size: 27px;
     }
     .languages{
@@ -503,8 +514,14 @@ header{
 
     .linky a{
         font-family: var(--main-font);
-        font-size: xx-large;
-        
+        font-size: xx-large;  
+    }
+
+    .vid-description{
+        display: flex;
+        justify-content: center;
+        padding: 30px 20px;
+        font-size: 1.6rem;
     }
 
     

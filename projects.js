@@ -10,10 +10,6 @@ document.addEventListener("scroll", () =>{
     if(isInViewPort(h3)){
         code.style.opacity = "1";
     }
-    
-    else{
-        code.style.opacity = "0";
-    }
 })
 
 
