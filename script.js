@@ -43,7 +43,7 @@ document.addEventListener("scroll", () => {
         }
         else {
             projects[i].style.opacity = "0"
-            imageFlex[i].style.opacity = "0";
+            
 
         }
     }
