@@ -31,6 +31,7 @@ h2{
     padding-bottom: 16px;
 }
 h3{
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -98,7 +99,7 @@ header{
 }
 
 .logo-box{
-    background-color: black;
+    background: linear-gradient(45deg, #726f6f,#0c0d0d,#0c0d0d);
     height: 50px;
     width: 50px;
     color: white;
@@ -128,7 +129,7 @@ header{
     position: relative;
     width: 300px;
     height: 300px;
-    background-color: black;
+    background: linear-gradient(45deg, #726f6f,#0c0d0d,#0c0d0d, #0c0d0d);
     padding: 1rem;
     margin-top: 20vh;
     margin-bottom: 36vh;
@@ -198,12 +199,39 @@ header{
     display: flex;
     justify-content: center;
     align-self: center;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+
+    padding-bottom: 16px;
+    
 }
+
+
+
 .jump-to-1{
     grid-area: side1;
     transform: rotate(-90deg);
     align-self: flex-start;
+    cursor: pointer;
 }
+
+/* .jump-to-1::after{
+    content: '';
+  position: absolute;
+  width: 80%;
+  transform: scaleX(1);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+} */
+
+/* .jump-to-1:hover::after{   /* for desktop only? 
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
 
 .side-text{
     font-family: var(--main-font);
@@ -215,7 +243,21 @@ header{
     font-family: var(--main-font);
     transform: rotate(90deg);
     align-self: end;
+    cursor: pointer;
 }
+
+/* .jump-to-2::after{
+    content: '';
+    position: absolute;
+    width: 70%;
+    transform: scaleX(1);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+} */
 .description{
     padding: 10px;
     grid-area: description;
@@ -241,7 +283,9 @@ header{
 .content-description {
     color: white;
     width: 99%;
-    opacity: 0; 
+    opacity: 0;
+    padding-left: 1rem;
+    padding-right: 1rem; 
     transition: opacity 2s;
 }
 
@@ -324,6 +368,38 @@ header{
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 30px;
+}
+
+.just-me-wrapper{
+    padding-bottom: 3rem;
+}
+
+.just-me-wrapper{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.just-me-list{
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+.img-container img{
+    object-fit: cover;
+    height: 400px;
+    /* max-width: 100%; */
+    width: 260px;
+    /* max-height: 100%; */
+}
+
+.vids{
+    margin-top: 20vh;
 }
 
 @media screen and (min-width: 550px) and (max-width:700px) {
